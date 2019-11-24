@@ -1,0 +1,40 @@
+----------------------------------------------
+Business requirements:
+----------------------------------------------
+1. Ability to add events:
+    a. Should have a table called 'event'
+        fields:
+            1. id           - primary unique
+            2. name         - string(50)
+            3. description  - string(200)
+            4. datefrom     - date
+            5. dateto       - date
+            6. location     - string(200)
+            7. imageurl     - string(200)
+            8. status       - string(20)
+
+2. Ability to add members
+    a. Should have a table called 'member'
+        fields:
+            1. id           - primary unique
+            4. firstname    - string(50)
+            5. lastname     - string(50)
+            6. churchname   - string(200)
+            7. gender       - string(20)
+            8. contactno    - string(50)
+
+3. Ability to add a member to and event
+    a. Should have a table called 'event_member'
+        fields:
+            1. id           - primary unique
+            2. event_id     - integer
+            3. member_id    - integer
+            4. status       - string(50)
+
+----------------------------------------------
+Technical specification
+----------------------------------------------
+1. Backend    - Flask, SQLite and other modules
+2. Testing    - Postman
+3. Deployment - Heroku
+
